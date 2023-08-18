@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@media only screen and (max-width: 1400px) {
+  .col-2 nav a {
+    margin-top: 20px !important;
+    font-size: 100%;
+  }
+  .col-2 .buttons button {
+    margin-top: 15% !important;
+    font-size: 90% !important;
+  }
+  td {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .fs {
+    font-size: medium !important;
+  }
+  .pic, .info {
+    height: 249px !important;
+    line-height: 170px !important;
+  }
+  .bios {
+    height: 249px !important;
+  }
+  .bios p {
+    margin-top: 30px !important;
+  }
+}
+
+* {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes animacija {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animacija {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+body,
+button {
+  font-family: "Poppins", sans-serif !important;
+}
+
+body {
+  background-color: #c8d3d6;
+  overflow: hidden;
+}
+
+td,
+th {
+  padding: 1.5%;
+  border-bottom: 1px solid black;
+}
+
+th {
+  color: white;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table #header {
+  background-color: #5c6bc0;
+}
+
+.col-2 {
+  width: 17%;
+  height: 85vh;
+  background-color: #26418f;
+}
+
+.col-2 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col-2 nav a {
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 120%;
+  color: white;
+}
+
+.col-2 nav a:hover {
+  color: #8e99f3;
+}
+
+.col-2 .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col-2 .buttons button {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 15%;
+  font-size: medium;
+  background-color: white;
+  color: black;
+  border: 0;
+  padding: 10px;
+  -webkit-box-shadow: 2px 6px rgba(106, 108, 226, 0.1);
+          box-shadow: 2px 6px rgba(106, 108, 226, 0.1);
+}
+
+.col-2 .buttons button:hover {
+  background-color: #c8d3d6;
+}
+
+hr {
+  margin-top: 30px;
+  width: 80%;
+  color: #5c6bc0;
+}
+
+.col-10 {
+  width: 83%;
+  height: 85vh;
+  background-color: white;
+  color: black;
+  -webkit-animation: 1s ease-out 0s 1 animacija;
+          animation: 1s ease-out 0s 1 animacija;
+}
+
+.p-xt {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+
+.p-b {
+  padding-bottom: 20px;
+}
+
+.fs {
+  font-size: larger;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px;
+}
+
+.col {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.col .pic {
+  width: 30%;
+  height: 300px;
+}
+
+.col .pic img {
+  width: 100%;
+}
+
+.col .info {
+  width: 70%;
+  height: 312px;
+  background-color: #26418f;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  line-height: 210px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.col .info h2 {
+  -webkit-animation: 1s ease-out 0s 1 animacija;
+          animation: 1s ease-out 0s 1 animacija;
+}
+
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#firstBio,
+#secondBio {
+  display: none;
+  position: absolute;
+  -webkit-animation: 1s ease-out 0s 1 slideDown;
+          animation: 1s ease-out 0s 1 slideDown;
+}
+
+#firstBio {
+  margin-left: 30%;
+}
+
+#secondBio {
+  margin-right: 30%;
+}
+
+.bios {
+  width: 70%;
+  background-color: lightblue;
+  height: 312px;
+}
+
+.bios p {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+/*# sourceMappingURL=style.css.map */

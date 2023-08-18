@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Efekti Tabele - Autori</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-2">
+            <nav>
+                <a href="../index.html">Početna</a>
+                <a href="./uputstvo.html">Uputstvo</a>
+                <a href="./autori.html">O autorima</a>
+            </nav>
+            <hr>
+        </div>
+        <div class="col-10">
+            <div class="col">
+                <div class="pic" onmouseover="hoverImg(0);" onmouseleave="leaveImg(0);">
+                    <img src="../images/ognjen.jpg" alt="Ognjen Kukalj">
+                </div>
+                <div class="info" id="first">
+                    <h2>Ognjen Kukalj</h2>
+                </div>
+                <div class="bios" id="firstBio">
+                    <p>
+                        Ime: Ognjen Kukalj<br>
+                        Datum rođenja: 03. 08. 2004.<br>
+                        Adresa: Mila Marića 13, 36000 Kraljevo<br>
+                        Mobilni: 067-761-2227<br>
+                        E-mail: ognjenkuks@gmail.com<br><br>
+                        - odradio Javu Script
+                    </p>
+                </div>
+            </div>
+            <div class="col reverse">
+                <div class="pic" onmouseover="hoverImg(1);" onmouseleave="leaveImg(1);">
+                    <img src="../images/veljko.png" alt="Veljko Kostović">
+                </div>
+                <div class="info" id="second">
+                    <h2>Veljko Kostović</h2>
+                </div>
+                <div class="bios" id="secondBio">
+                    <p>
+                        Ime: Veljko Kostović<br>
+                        Datum rođenja: 19. 07. 2004.<br>
+                        Adresa: Rudarska 39, 38218 Leposavić<br>
+                        Mobilni: 064-468-6400<br>
+                        E-mail: veljkokostovic12@gmail.com<br><br>
+                        - odradio HTML, CSS
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../scripts/autori.js"></script>
+</body>
+
+</html>

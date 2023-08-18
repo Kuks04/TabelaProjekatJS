@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import "_boje.scss";
+@media only screen and (max-width: 1400px) {
+    .col-2 {
+        nav {
+            a {
+                margin-top: 20px !important;
+                font-size: 100%;
+            }
+        }
+        .buttons {
+            button {
+                margin-top: 15% !important;
+                font-size: 90% !important;
+            }
+        }
+    }
+    td {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .fs {
+        font-size: medium !important;
+    }
+    .pic, .info {
+        height: 249px !important;
+        line-height: 170px !important;
+    }
+    .bios {
+        height: 249px !important;
+        p {
+            margin-top: 30px !important;
+        }
+    }
+}
+* {
+    transition: 0.5s;
+}
+@keyframes animacija {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+body,
+button {
+    font-family: "Poppins", sans-serif !important;
+}
+body {
+    background-color: $background;
+    overflow: hidden;
+}
+td,
+th {
+    padding: 1.5%;
+    border-bottom: 1px solid $crna;
+}
+th {
+    color: $white;
+}
+table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    #header {
+        background-color: $blue;
+    }
+}
+.col-2 {
+    width: 17%;
+    height: 85vh;
+    background-color: $darkBlue;
+    nav {
+        display: flex;
+        flex-direction: column;
+        a {
+            padding: 10px;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-decoration: none;
+            font-size: 120%;
+            color: $white;
+        }
+        a:hover {
+            color: $lightBlue;
+        }
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        button {
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 15%;
+            font-size: medium;
+            background-color: $white;
+            color: $crna;
+            border: 0;
+            padding: 10px;
+            box-shadow: 2px 6px $shadow;
+        }
+        button:hover {
+            background-color: $background;
+        }
+    }
+}
+hr {
+    margin-top: 30px;
+    width: 80%;
+    color: $blue;
+}
+.col-10 {
+    width: 83%;
+    height: 85vh;
+    background-color: $white;
+    color: $crna;
+    animation: 1s ease-out 0s 1 animacija;
+}
+.p-xt {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.p-b {
+    padding-bottom: 20px;
+}
+.fs {
+    font-size: larger;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+.col {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    .pic {
+        width: 30%;
+        height: 300px;
+        img {
+            width: 100%;
+        }
+    }
+    .info {
+        width: 70%;
+        height: 312px;
+        background-color: $darkBlue;
+        color: $white;
+        font-size: xx-large;
+        text-align: center;
+        line-height: 210px;
+        transition: 1s;
+        h2 {
+            animation: 1s ease-out 0s 1 animacija;
+        }
+    }
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+#firstBio,
+#secondBio {
+    display: none;
+    position: absolute;
+    animation: 1s ease-out 0s 1 slideDown;
+}
+#firstBio {
+    margin-left: 30%;
+}
+#secondBio {
+    margin-right: 30%;
+}
+.bios {
+    width: 70%;
+    background-color: lightblue;
+    height: 312px;
+    p {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+}
